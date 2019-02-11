@@ -7,21 +7,20 @@ class App extends React.Component {
 
     // THE ONLY SITUATION to make a direct assignment to this.state
     // is inside the constructor function
+    // Below we are initializing state
     this.state = { lat: null };
+  }
 
+  // to update our state object, we call setState
+  // never make direct assignment to the state object
+  componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
-      position => {
-        // to update our state object, we call setState
-        // never make direct assignment to the state object
-        this.setState({ lat: position.coords.latitude });
-      },
-      err => {
-        this.setState({ errorMessage: err.message });
-      }
+      position => this.setState({ lat: position.coords.latitude }),
+      err => this.setState({ errorMessage: err.message })
     );
   }
-  // React requires that a dev define render
 
+  // React requires that a dev define render
   // for a better user experience, conditional statements will be used
   // to return different content, depending on the senario
   render() {
