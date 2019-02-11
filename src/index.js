@@ -1,15 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import SeasonDisplay from "./SeasonDisplay";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    // THE ONLY SITUATION to make a direct assignment to this.state
-    // is inside the constructor function
-    // Below we are initializing state
-    this.state = { lat: null };
-  }
+  state = { lat: null, errorMessage: "" };
 
   // to update our state object, we call setState
   // never make direct assignment to the state object
@@ -30,7 +24,7 @@ class App extends React.Component {
     }
     // if no latitude and there is an error message = show error
     if (!this.state.errorMessage && this.state.lat) {
-      return <div>latitude: {this.state.lat}</div>;
+      return <SeasonDisplay lat={this.state.lat} />;
     }
     // *if no latitude and no error message = show "loading!"
     // *instead of building if/else conditional statements, conditional rendering
