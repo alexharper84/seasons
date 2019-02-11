@@ -15,13 +15,29 @@ class App extends React.Component {
         // never make direct assignment to the state object
         this.setState({ lat: position.coords.latitude });
       },
-
-      err => console.log(err)
+      err => {
+        this.setState({ errorMessage: err.message });
+      }
     );
   }
   // React requires that a dev define render
+
+  // for a better user experience, conditional statements will be used
+  // to return different content, depending on the senario
   render() {
-    return <div>Latitude: {this.state.lat} </div>;
+    // if there is latitude data and no error = show latitude
+    if (this.state.errorMessage && !this.state.lat) {
+      return <div>Error: {this.state.errorMessage}</div>;
+    }
+    // if no latitude and there is an error message = show error
+    if (!this.state.errorMessage && this.state.lat) {
+      return <div>latitude: {this.state.lat}</div>;
+    }
+    // *if no latitude and no error message = show "loading!"
+    // *instead of building if/else conditional statements, conditional rendering
+    //  is utilized.
+    // *returning different JSX depending upon the state or the props of component
+    return <div>Loading!!!</div>;
   }
 }
 
