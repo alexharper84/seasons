@@ -30,7 +30,7 @@ class App extends React.Component {
     // *instead of building if/else conditional statements, conditional rendering
     //  is utilized.
     // *returning different JSX depending upon the state or the props of component
-    return <div>Loading!!!</div>;
+    return <div>I'm trying to get your location info...</div>;
   }
 }
 
