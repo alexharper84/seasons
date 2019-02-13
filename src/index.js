@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import SeasonDisplay from "./SeasonDisplay";
+import Spinner from "./Spinner";
 
 class App extends React.Component {
   state = { lat: null, errorMessage: "" };
@@ -30,7 +31,7 @@ class App extends React.Component {
     // *instead of building if/else conditional statements, conditional rendering
     //  is utilized.
     // *returning different JSX depending upon the state or the props of component
-    return <div>I'm trying to get your location info...</div>;
+    return <Spinner message="I'm trying to get your location info..." />;
   }
 }
 
