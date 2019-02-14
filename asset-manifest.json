@@ -1,13 +1,13 @@
 {
   "main.css": "/seasons/static/css/main.6f89980d.chunk.css",
-  "main.js": "/seasons/static/js/main.fd2c9a03.chunk.js",
-  "main.js.map": "/seasons/static/js/main.fd2c9a03.chunk.js.map",
+  "main.js": "/seasons/static/js/main.4d562195.chunk.js",
+  "main.js.map": "/seasons/static/js/main.4d562195.chunk.js.map",
   "static/js/1.5b7ddef5.chunk.js": "/seasons/static/js/1.5b7ddef5.chunk.js",
   "static/js/1.5b7ddef5.chunk.js.map": "/seasons/static/js/1.5b7ddef5.chunk.js.map",
   "runtime~main.js": "/seasons/static/js/runtime~main.b162515c.js",
   "runtime~main.js.map": "/seasons/static/js/runtime~main.b162515c.js.map",
   "static/css/main.6f89980d.chunk.css.map": "/seasons/static/css/main.6f89980d.chunk.css.map",
   "index.html": "/seasons/index.html",
-  "precache-manifest.740692b681ee62cc99187ee6e5eb7d15.js": "/seasons/precache-manifest.740692b681ee62cc99187ee6e5eb7d15.js",
+  "precache-manifest.2fc1e69af9bafc1a6126f1ca09c2bb60.js": "/seasons/precache-manifest.2fc1e69af9bafc1a6126f1ca09c2bb60.js",
   "service-worker.js": "/seasons/service-worker.js"
 }

@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fd2c9a03e9ab3b0f65c8",
+    "revision": "4d56219537d369bdd353",
     "url": "/seasons/static/css/main.6f89980d.chunk.css"
   },
   {
-    "revision": "fd2c9a03e9ab3b0f65c8",
-    "url": "/seasons/static/js/main.fd2c9a03.chunk.js"
+    "revision": "4d56219537d369bdd353",
+    "url": "/seasons/static/js/main.4d562195.chunk.js"
   },
   {
     "revision": "5b7ddef5528d7571d9bf",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/seasons/static/js/runtime~main.b162515c.js"
   },
   {
-    "revision": "53ca255f8f19faca604a8ccca310d0ac",
+    "revision": "86390671c08548603b344dcc0aadeaa7",
     "url": "/seasons/index.html"
   }
 ];
