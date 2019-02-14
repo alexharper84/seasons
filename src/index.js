@@ -16,6 +16,9 @@ class App extends React.Component {
   }
 
   renderContent() {
+    // React requires that a dev define render
+    // for a better user experience, conditional statements will be used
+    // to return different content, depending on the senario
     if (this.state.errorMessage && !this.state.lat) {
       return <div>Error: {this.state.errorMessage}</div>;
     }
@@ -30,9 +33,6 @@ class App extends React.Component {
     return <Spinner message="I'm trying to get your location info..." />;
   }
 
-  // React requires that a dev define render
-  // for a better user experience, conditional statements will be used
-  // to return different content, depending on the senario
   render() {
     return <div className="red">{this.renderContent()}</div>;
   }
